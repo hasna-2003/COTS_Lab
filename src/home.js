@@ -20,7 +20,18 @@ const researchProjects = [
 
 export function Home({ onNavigate }) {
   return <>
-    <section className="about-section">
+    <section className="hero-section">
+      <div className="hero-content">
+        <p className="section-kicker">Cognitive Systems and Time Series</p>
+        <h1 className="hero-title"><span>Research for</span><span>complex systems.</span></h1>
+        <p className="hero-subtitle">We combine cognitive models and time-series methods to understand dynamic data and support better decisions.</p>
+        <div className="hero-buttons">
+          <button className="button hero-button-primary" onClick={() => onNavigate('Projects')}>Explore our research <ArrowIcon /></button>
+          <button className="button hero-button-secondary" onClick={() => onNavigate('Contact us')}>Contact us</button>
+        </div>
+      </div>
+    </section>
+    {/* <section className="about-section">
       <div className="about-heading">
         <p className="section-kicker">About us</p>
         <h1>Cognitive systems<br /><em>meet time series.</em></h1>
@@ -31,7 +42,7 @@ export function Home({ onNavigate }) {
         <p>We integrate cognitive models with time series methods to analyze and interpret complex temporal data to make sense of complex time series data, leading to improved decision-making, forecasting, and understanding of dynamic processes in various domains.</p>
         <button className="button button-dark" onClick={() => onNavigate('Projects')}>Explore our research <ArrowIcon /></button>
       </div>
-    </section>
+    </section> */}
 
     <section className="home-section research-areas-section">
       <div className="section-heading compact"><div><p className="section-kicker">What we study</p><h2>Research <em>areas.</em></h2></div><p className="section-intro">We bring together cognition, computation, and temporal data to study complex systems.</p></div>
